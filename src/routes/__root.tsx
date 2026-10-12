@@ -96,6 +96,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      // Botpress AI webchat — floating chat widget (bottom-right)
+      { src: "https://cdn.botpress.cloud/webchat/v3.7/inject.js" },
+      { src: "https://files.bpcontent.cloud/2026/10/12/23/20261012232028-I89CZ6HE.js", defer: true },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
