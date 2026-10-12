@@ -129,5 +129,6 @@ function Portfolio() {
       </section>
     </main>
     <footer className="site-width grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-7"><div className="min-w-0"><a href="#home" className="brand text-xl">yk<span>.</span></a><p className="mt-2 text-[10px] text-muted-foreground">© 2026 Yuvraj Krishnani</p></div><a href="#home" className="flex shrink-0 items-center gap-2 text-[10px] text-muted-foreground hover:text-primary">Back to top <ArrowUpRight size={13} /></a></footer>
+    <BotpressChat />
   </>;
 }
