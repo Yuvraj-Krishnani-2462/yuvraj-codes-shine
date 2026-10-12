@@ -11,4 +11,4 @@
 
 - Keep the portfolio as a single scrolling index page with native section anchors, because the requested navigation targets sections on one page.
 - Store missing personal content in clearly labeled placeholders rather than inferred accomplishments, so future edits remain factually accurate.
-- Define portfolio styling in src/styles.css using semantic tokens, and serve uploaded media through imported Lovable Assets pointers, to keep presentation consistent and media lightweight.
+- Define portfolio styling in src/styles.css using semantic tokens, and serve uploaded media as regular imported image files in src/assets (not Lovable Assets pointers), because the site is self-hosted via GitHub/Vercel where Lovable asset URLs don't resolve.

@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import { ArrowDown, ArrowUpRight, ArrowRight, Github, Linkedin, Mail, MapPin, Menu, X, Code2, Braces, Terminal, GraduationCap, FolderCode, Award, Compass, Check, Copy, FileDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import portrait from '@/assets/yuvraj-profile.jpeg.asset.json';
+import portrait from '@/assets/yuvraj-profile.jpeg';
 
 // Replace these clearly marked details as your portfolio grows.
 const profile = {
@@ -62,7 +62,7 @@ function Portfolio() {
     </header>
     <main>
       <section id="home" className="hero">
-        <img className="hero-photo" src={portrait.url} alt="Yuvraj Krishnani standing outdoors" fetchPriority="high" />
+        <img className="hero-photo" src={portrait} alt="Yuvraj Krishnani standing outdoors" fetchPriority="high" />
         <div className="site-width hero-content reveal">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-3 py-1.5 text-[10px] text-muted-foreground"><span className="h-1.5 w-1.5 rounded-full bg-success" /> A new chapter in computer science</div>
           <p className="mt-8 font-mono text-xs text-muted-foreground">Hello world, I'm</p>
