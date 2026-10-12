@@ -33,6 +33,24 @@ function SocialLinks({ compact = false }: { compact?: boolean }) {
     <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Yuvraj on LinkedIn" title="LinkedIn" className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"><Linkedin size={18} />{!compact && <span className="text-xs">LinkedIn</span>}</a>
   </div>;
 }
+// Botpress AI chatbot — loaded dynamically so the floating widget works
+// alongside SSR. Official embed scripts; order is guaranteed via onload.
+const BOTPRESS_INJECT_URL = 'https://cdn.botpress.cloud/webchat/v3.7/inject.js';
+const BOTPRESS_CONFIG_URL = 'https://files.bpcontent.cloud/2026/10/12/23/20261012232028-I89CZ6HE.js';
+function BotpressChat() {
+  useEffect(() => {
+    if (document.querySelector(`script[src="${BOTPRESS_INJECT_URL}"]`)) return;
+    const config = document.createElement('script');
+    config.src = BOTPRESS_CONFIG_URL;
+    config.async = false;
+    const inject = document.createElement('script');
+    inject.src = BOTPRESS_INJECT_URL;
+    inject.async = false;
+    inject.onload = () => document.head.appendChild(config);
+    document.head.appendChild(inject);
+  }, []);
+  return null;
+}
 function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState('home');
