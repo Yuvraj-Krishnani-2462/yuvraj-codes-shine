@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import { ArrowDown, ArrowUpRight, ArrowRight, Github, Linkedin, Mail, MapPin, Menu, X, Code2, Braces, Terminal, GraduationCap, FolderCode, Award, Compass, Check, Copy, FileDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import portrait from '@/assets/yuvraj-profile.jpeg.asset.json';
+import portrait from '@/assets/yuvraj-profile.jpeg';
 
 // Replace these clearly marked details as your portfolio grows.
 const profile = {
