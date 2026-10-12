@@ -95,10 +95,12 @@
 @media (max-width: 767px) {
  .site-width { padding-inline: 24px; }
  .header-inner { min-height: 70px; }
- .hero { min-height: 720px; }
+ .hero { min-height: 650px; }
  .hero-photo { width: 100%; object-position: 55% center; opacity: .32; }
  .hero::before { background: linear-gradient(90deg, color-mix(in oklch,var(--background) 90%,transparent),color-mix(in oklch,var(--background) 30%,transparent)); }
- .hero-content { padding-top: 74px; padding-bottom: 52px; }
+ .hero-content { padding-top: 52px; padding-bottom: 32px; }
+ .hero-content a[data-slot], .hero-content a.inline-flex { max-width: 100%; }
+ .hero-content .mt-8.flex.flex-wrap.gap-3 > a { padding-inline: 20px; }
  .hero h1 { font-size: 54px; }
  .hero-intro { max-width: 340px; }
  .section { padding-block: 52px; }
