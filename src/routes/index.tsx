@@ -86,7 +86,7 @@ function Portfolio() {
       </section>
       <section id="education" className="section site-width">
         <SectionHeading number="02">Education</SectionHeading>
-        <div className="grid gap-5 md:grid-cols-[1fr_auto]"><div className="flex items-start gap-5"><span className="skill-icon shrink-0"><GraduationCap size={21} /></span><div><p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary">The foundation</p><h3 className="text-xl">B.Tech in Computer Science Engineering</h3><p className="mt-2 text-sm text-muted-foreground">JECRC University <span className="mx-2 text-border">/</span> Jaipur, Rajasthan</p><p className="placeholder-label mt-5">[Add your study dates and relevant coursework.]</p></div></div><span className="tag h-fit w-fit md:mt-2">1st year · In progress</span></div>
+        <div className="grid gap-5 md:grid-cols-[1fr_auto]"><div className="flex items-start gap-5"><span className="skill-icon shrink-0"><GraduationCap size={21} /></span><div><p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary">The foundation</p><h3 className="text-xl">B.Tech in Computer Science Engineering</h3><p className="mt-2 text-sm text-muted-foreground">JECRC University <span className="mx-2 text-border">/</span> Jaipur, Rajasthan</p><p className="mt-4 font-mono text-sm text-primary">2026 — 2030</p><p className="placeholder-label mt-4">[Add relevant coursework here.]</p></div></div><span className="tag h-fit w-fit md:mt-2">1st year · In progress</span></div>
       </section>
       <section id="skills" className="section site-width">
         <SectionHeading number="03">Technical toolkit</SectionHeading>
